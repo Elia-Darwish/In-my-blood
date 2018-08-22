@@ -1,0 +1,111 @@
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    aside {
+        width: 7%;
+        height: 100%;
+        border-right: #dddddd solid 1px;
+        @include center;
+    
+        a {
+            width: 25%;
+        }
+    }
+
+
+    .left {
+        width: 55%;
+        height: 100%;
+        display: flex;
+
+        .main-content {
+
+            flex: 1 60%;
+            padding: 0 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+            article {
+                height: 40%;
+                margin: 0 auto 3rem;
+                
+                h1 {
+                    font-size: 6rem;
+                    text-decoration: underline;
+                    letter-spacing: .5rem;
+                    line-height: 1.5em;
+                    margin-bottom: 2rem;
+                }
+
+
+            
+            }
+
+            .artist {
+                height: 20%;
+
+                h4 {
+                    color: #4e4e4e;
+
+                    b {
+                        color: black;
+                    }
+                }
+
+                img {
+                    border-radius: 10px;
+                    margin: .5rem 0;
+                }
+            }
+        }
+
+
+        .articles {
+            width: 50%;
+            margin: 5% 0;
+            height: 90%;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: darkgrey;
+            }
+
+            
+            .grey {
+                background-color: #E6E2E8;
+            }
+
+
+            article {
+                padding: 2rem;
+                border-radius: 5px;
+
+                h3 {
+                    padding: 1rem 0;
+                    color: #4e4e4e;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 0 48%;
+        height: 100%;
+        @include center;
+
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+}

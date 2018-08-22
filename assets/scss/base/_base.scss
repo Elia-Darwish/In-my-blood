@@ -1,0 +1,56 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $light-font;
+    font-size: 12px;
+}
+
+.container {
+    @include center; 
+    width: 100vw;
+    height: 100vh;
+    background: {
+        color: #040c04;
+        image: url(../images/bg.jpeg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 95vw;
+    height: 85vh;
+    background-color: $background;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h4 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: lighter;
+    color: #414141;
+    padding: 1rem 0;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+}
+

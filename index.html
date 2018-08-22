@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page-layout</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <header>
+                <div class="menu-icon">
+                    <svg width="24" height="24" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18" />
+                    </svg>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <main>
+
+                <aside>
+                    <a href="#">
+                        <svg viewBox="0 0 32 32">
+                            <path fill="#999" fill-rule="evenodd" d="M31.106 15H3.278l8.325-8.293c.391-.391.391-1.024 0-1.414-.391-.391-1.024-.391-1.414 0l-9.9 9.899c-.385.385-.385 1.029 0 1.414l9.9 9.9c.391.391 1.024.391 1.414 0 .391-.391.391-1.024 0-1.414L3.278 17h27.828c.552 0 1-.448 1-1s-.448-1-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </aside>
+
+
+                <section class="left">
+
+                    <div class="main-content">
+                        <article>
+                            <h1>In my
+                                <br>blood</h1>
+                            <h4>A Joint Photography Docuseries</h4>
+                            <p>Lorem ipsum dolor sit amet , elit. explicabo iure numquam Consectetur, ad!</p>
+                            <a href="#">View Full Project</a>
+                        </article>
+
+                        <div class="artist">
+                            <h4>
+                                <b>01</b> / 24 - Lawrson Pinson</h4>
+                            <img src="./assets/images/water.jpeg" alt="woman under water">
+                            <a href="#">See Artists Portfolio</a>
+                        </div>
+                    </div>
+
+                    <div class="articles">
+
+                        <article class="grey">
+                            <h4>01</h4>
+                            <h3>Lawrson Pinson</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>02</h4>
+                            <h3>Lindsay Stevens</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>03</h4>
+                            <h3>Steven Francis</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>04</h4>
+                            <h3>Martin Cruz</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>05</h4>
+                            <h3>Lindsay Stevens</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?.</p>
+                        </article>
+                        <article>
+                            <h4>06</h4>
+                            <h3>Steven Francis</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>07</h4>
+                            <h3>Steven Francis</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+                        <article>
+                            <h4>08</h4>
+                            <h3>Martin Cruz</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi nihil architecto sint eligendi
+                                explicabo iure numquam aut laboriosam doloribus?</p>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <section class="right">
+
+                    <img src="./assets/images/woman.jpg" alt="woman with Jacket">
+
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(".menu-icon").click(function () {
+            $("header").toggleClass("active");
+        });
+    </script>
+
+
+</body>
+
+</html>

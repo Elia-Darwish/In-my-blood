@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Trueno-sbd;
+    src: url(../fonts/truenosbd.otf);
+}
+
+@font-face {
+    font-family: Trueno-lt;
+    src: url(../fonts/truenolt.otf);
+}
+
+@font-face {
+    font-family: Trueno-rg;
+    src: url(../fonts/truenorg.otf);
+}
+
+@font-face {
+    font-family: Trueno-ltlt;
+    src: url(../fonts/truenoultlt.otf);
+}
+
+@import "base/variables",
+        "base/mixins",
+        "base/base";
+
+@import "modules/all";
